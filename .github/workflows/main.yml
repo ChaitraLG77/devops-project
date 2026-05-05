@@ -21,5 +21,5 @@ jobs:
       run: docker build -t devops-app .
 
     - name: Run Docker Container
-      run: docker run devops-app
+      run: docker run --rm devops-app
 
