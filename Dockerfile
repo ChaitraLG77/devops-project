@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN javac Main.java
+RUN ./mvnw clean package || mvn clean package
 
-CMD ["java", "Main"]
+COPY target/*.jar app.jar
+
+ENTRYPOINT ["java","-jar","app.jar"]
