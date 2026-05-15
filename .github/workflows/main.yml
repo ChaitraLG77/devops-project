@@ -29,5 +29,4 @@ jobs:
     - name: Push Docker Image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/devops-app
 
-    - name: Run Docker Container
-      run: docker run --rm ${{ secrets.DOCKER_USERNAME }}/devops-app
+    
