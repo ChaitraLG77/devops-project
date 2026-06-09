@@ -11,7 +11,7 @@ public class Application {
 
         @GetMapping("/")
     public String home() {
-        return "Welcome to DevOps Project 🚀";
+        return "Welcome to DevOps Project two 🚀";
     }
 
     @GetMapping("/hello")
