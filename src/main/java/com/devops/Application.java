@@ -9,9 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Application {
 
+        @GetMapping("/")
+    public String home() {
+        return "Welcome to DevOps Project 🚀";
+    }
+
     @GetMapping("/hello")
     public String hello() {
-        return "Hello DevOps Version2 🚀";
+        return "Hello DevOps 🚀";
     }
 
     public static void main(String[] args) {
