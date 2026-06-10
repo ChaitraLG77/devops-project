@@ -36,7 +36,7 @@ public class Application {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello from the updated DevOps project!";
+        return "Hello This update is from Amit!";
     }
 
     public static void main(String[] args) {
